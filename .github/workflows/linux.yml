@@ -1,14 +1,14 @@
 name: linux
-on: 
+on: started
   workflow_dispatch:
-defaults:
-  run:
+defaults: - 
+  run: started
     shell: bash
 
-jobs:
-  build:
+jobs: pushed
+  build: pushed 
     runs-on: ubuntu-latest
-    steps:
+    steps: q
     - uses: fastai/workflows/ssh@master
       with:
         ssh_key: ${{ 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 }}
