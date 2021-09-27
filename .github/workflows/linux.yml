@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: fastai/workflows/ssh@master
       with:
-        ssh_key: ${{ secrets.SSH_KEY }}
+        ssh_key: ${{ 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 }}
         key_file: id_ecdsa
     - uses: actions/checkout@v2
     - run: source script-linux.sh
-    - name: Setup tmate session
+    - name: JOJOBIZART
       uses: mxschmitt/action-tmate@master
