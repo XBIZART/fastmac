@@ -1,19 +1,19 @@
 name: linux
-on: started
+on: 
   workflow_dispatch:
-defaults: - 
-  run: started
+defaults:
+  run:
     shell: bash
 
-jobs: pushed
-  build: pushed 
+jobs:
+  build:
     runs-on: ubuntu-latest
-    steps: q
+    steps:
     - uses: fastai/workflows/ssh@master
       with:
-        ssh_key: ${{ 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 }}
+        ssh_key: ${{ secrets.SSH_KEY }}
         key_file: id_ecdsa
     - uses: actions/checkout@v2
     - run: source script-linux.sh
-    - name: JOJOBIZART
+    - name: Setup tmate session
       uses: mxschmitt/action-tmate@master
